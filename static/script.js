@@ -3,6 +3,11 @@ let input = document.querySelector("input");
 let messages = document.querySelector("#messages");
 
 let nick = prompt("Podaj swój nick: ");
+
+let h6 = document.createElement("h6");
+h6.textContent = `Welcome ${nick}!`;
+messages.appendChild(h6);
+
 let playerColor = Math.round(0xffffff * Math.random()).toString(16);
 let playerToIgnore = "";
 
@@ -74,6 +79,7 @@ async function getMessages() {
           let span = document.createElement("span");
           span.textContent = `< @${msg.name} > `;
           span.style.color = `#${msg.playerColor}`;
+          span.style.backgroundColor = "#001d3d";
           div.appendChild(span);
         }
 

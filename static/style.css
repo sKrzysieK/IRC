@@ -22,43 +22,68 @@ h1 {
   position: relative;
   display: flex;
   flex-direction: column;
+  border: 10px black solid;
+  border-radius: 10px;
 }
 
 #messages {
   height: 95%;
   width: 100%;
-  background-color: white;
+  background-color: #003566;
   box-sizing: border-box;
-  border: 5px black solid;
+  border: 0px black solid;
+  /* border-radius: 10px; */
   overflow: auto;
+}
+
+h6 {
+  font-size: 20px;
+  padding: 10px;
+  color: #ffc300;
 }
 
 .msg {
   width: 100%;
   text-align: left;
+  margin-left: 5%;
+  margin-top: 1%;
 }
 
 #ui {
-  width: calc(100% - 20px);
-  height: 5%;
+  width: 100%;
+  height: 8%;
   border: none;
-  padding: 0;
-  margin: 10px;
+  padding: 10px;
+  /* margin: 10px; */
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #001d3d;
+}
+
+#messages span {
+  color: #ffd60a;
 }
 
 input {
   width: 75%;
   text-align: center;
+  background-color: #ffc300;
+  color: #000814;
 }
 
 button {
-  width: 25%;
-  color: black;
+  width: 20%;
+  color: #000814;
   font-weight: bold;
   font-size: 100%;
+  background-color: #ffc300;
+}
+
+input:hover,
+button:hover {
+  background-color: #ffd60a;
 }
