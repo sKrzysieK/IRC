@@ -88,6 +88,8 @@ async function getMessages() {
 
         //   div.textContent = `[${msg.time}] < @${msg.name} > ${msg.message}`;
         scrollbar.getContentElement().appendChild(div);
+        let scroll = scrollbar.getScrollElement();
+        scroll.scrollTop = scroll.scrollHeight;
       }
     }
   }
